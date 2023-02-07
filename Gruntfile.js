@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             options:{
                 reporter: 'spec'
             },
-            src:['tests/test_login_page.js']
+            src:['tests/test_login_page.js', 'tests/test_login_with_different_languages.js']
         }
     }
    });
