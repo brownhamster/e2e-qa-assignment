@@ -16,7 +16,7 @@ describe("Brenntag Login Test", function() {
     await driver.quit();
   });
 
-  it("Fails Login", async function() {
+  it("should fail to login on on entering invalid credentials", async function() {
 
     // Locate the username and password fields and input the values from the config
     await driver.findElement(By.id("username")).sendKeys(config.username);
