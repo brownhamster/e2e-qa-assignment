@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             options:{
                 reporter: 'spec'
             },
-            src:['tests/test_login_page.js', 'tests/test_login_with_different_languages.js']
+            src:['tests/test_login_page.js', 'tests/test_login_with_different_languages.js', 'tests/test_login_failure.js']
         }
     }
    });
@@ -14,3 +14,4 @@ module.exports = function(grunt) {
 
    grunt.registerTask('default', 'mochaTest')
  };
+//'tests/test_login_page.js', 'tests/test_login_with_different_languages.js'

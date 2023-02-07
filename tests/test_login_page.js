@@ -1,6 +1,7 @@
 /*jshint esversion: 8 */
 
-const { loginPageURL } = require('../config');
+const config = require("../config.json");
+const loginPageURL = config.url;
 const { expect } = require("chai");
 const { Builder, By, Key, until } = require("selenium-webdriver");
 

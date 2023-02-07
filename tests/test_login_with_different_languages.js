@@ -1,6 +1,10 @@
 /*jshint esversion: 8 */
 
-const { loginPageURL, thaiText, vietText, chineseText } = require('../config');
+const config = require("../config.json");
+const loginPageURL = config.url;
+const vietText = config.vietText;
+const thaiText = config.thaiText;
+const chineseText = config.chineseText;
 const { expect } = require("chai");
 const { Builder, By, Key, until } = require("selenium-webdriver");
 const assert = require('assert');
