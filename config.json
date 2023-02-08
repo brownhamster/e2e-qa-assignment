@@ -4,5 +4,14 @@
     "thaiText": "ภาษาไทย",
     "chineseText": "繁體中文 (香港)",
     "username": "recruitment@digib.com",
-    "password": "random password"
+    "password": "random password",
+    "username_reset_password": "brenntag-automation@gmail.com",
+    "incorrect_url": "http://apac.breentag.com/",
+    "sign_up_country": "India",
+    "exp_sign_up_result": "https://www.brenntag.com/en-in/services/brenntag-connect-online-services/sign-up-request/",
+    "exp_login_failure_result": "Wrong email or password",
+    "exp_correct_login_title": "Login | Brenntag Connect",
+    "exp_thai_greeting": "ยินดีต้อนรับสู่ Brenntag Connect!",
+    "exp_viet_greeting": "Chào mừng bạn đến với Brenntag Connect!",
+    "exp_chinese_greeting": "歡迎使用Brenntag Connect！"
 }

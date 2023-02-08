@@ -28,7 +28,7 @@ describe("Brenntag Login Test", function() {
     // Wait for the error message to appear
     let errorMessage = await driver.wait(until.elementLocated(By.css("#error-element-password")), 5000);
     let errorMessageText = await errorMessage.getText();
-    assert.strictEqual(errorMessageText, "Wrong email or password");
+    assert.strictEqual(errorMessageText, config.exp_login_failure_result);
 
     // Take a screenshot of the error message
     await driver.takeScreenshot().then(function(data) {

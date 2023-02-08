@@ -18,9 +18,12 @@ describe("Login Page Availability Test", function() {
   });
 
   it("should load the login page", async function() {
+    
+    //loading login page
     await driver.get(loginPageURL);
+    //checking login page title
     const loginPageTitle = await driver.getTitle();
-    expect(loginPageTitle).to.equal("Login | Brenntag Connect");
+    expect(loginPageTitle).to.equal(config.exp_correct_login_title);
   });
   
 });

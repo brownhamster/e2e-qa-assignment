@@ -10,7 +10,7 @@ const { Builder, By, Key, until } = require("selenium-webdriver");
 const assert = require('assert');
 
 describe("Login Page Availability Test", function() {
-  this.timeout(30000)
+  this.timeout(50000)
   let driver;
 
     beforeEach(async function() {
@@ -24,23 +24,26 @@ describe("Login Page Availability Test", function() {
 
     it("should dispaly login page in Vietnamese", async function() {
 
+        //finding the element with viet text
         await driver.findElement(By.xpath("//a[text()='" + vietText +"']")).click();
+        //waiting for element to load
         await driver.wait(until.elementLocated(By.xpath("//*[@id='right-side']/div/div[1]/h3")), 5000);
+        //checking language greetings
         let greeting = await driver.findElement(By.xpath("//*[@id='right-side']/div/div[1]/h3")).getText();
-        assert.equal(greeting, "Chào mừng bạn đến với Brenntag Connect!");
+        assert.equal(greeting, config.exp_viet_greeting);
     });
 
-    it("should dispaly login page in Vietnamese in Traditional Chinese (Hong Kong)", async function() {
+    it("should dispaly login page in Traditional Chinese (Hong Kong)", async function() {
         await driver.findElement(By.xpath("//a[text()='" + chineseText +"']")).click();
         await driver.wait(until.elementLocated(By.xpath("//*[@id='right-side']/div/div[1]/h3")), 5000);
         let greeting = await driver.findElement(By.xpath("//*[@id='right-side']/div/div[1]/h3")).getText();
-        assert.equal(greeting, "歡迎使用Brenntag Connect！");
+        assert.equal(greeting, config.exp_chinese_greeting);
     });
 
-    it("should dispaly login page in Vietnamese in Thai", async function() {
+    it("should dispaly login page in Thai", async function() {
         await driver.findElement(By.xpath("//a[text()='" + thaiText +"']")).click();
         await driver.wait(until.elementLocated(By.xpath("//*[@id='right-side']/div/div[1]/h3")), 5000);
         let greeting = await driver.findElement(By.xpath("//*[@id='right-side']/div/div[1]/h3")).getText();
-        assert.equal(greeting, "ยินดีต้อนรับสู่ Brenntag Connect!");
+        assert.equal(greeting, config.exp_thai_greeting);
     });
 });
