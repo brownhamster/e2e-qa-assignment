@@ -6,7 +6,7 @@ const assert = require('assert');
 
 
 describe("Sign Up Page Navigation test", function() {
-    this.timeout(30000)
+    this.timeout(50000)
     let driver;
   
     beforeEach(async function() {

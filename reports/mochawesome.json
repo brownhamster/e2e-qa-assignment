@@ -2,14 +2,14 @@
   "stats": {
     "suites": 7,
     "tests": 9,
-    "passes": 9,
+    "passes": 8,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-02-08T10:42:48.990Z",
-    "end": "2023-02-08T10:45:38.622Z",
-    "duration": 169632,
+    "failures": 1,
+    "start": "2023-02-13T11:31:36.531Z",
+    "end": "2023-02-13T11:34:21.904Z",
+    "duration": 165373,
     "testsRegistered": 9,
-    "passPercent": 100,
+    "passPercent": 88.88888888888889,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "56aea7b6-21ae-4fc7-963a-459adfcf6faf",
+      "uuid": "6f3468ee-1f75-47b1-aec6-edde1c2b5214",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dc80efef-a23d-4604-bfa5-b77a3163227f",
+          "uuid": "67bcee5b-f052-45a3-a036-a61a65e89368",
           "title": "Login Page Availability Test",
           "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_login_page.js",
           "file": "/tests/test_login_page.js",
@@ -36,7 +36,7 @@
               "title": "\"before each\" hook in \"Login Page Availability Test\"",
               "fullTitle": "Login Page Availability Test \"before each\" hook in \"Login Page Availability Test\"",
               "timedOut": false,
-              "duration": 4701,
+              "duration": 13271,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "a38fd6f2-e1e6-427b-9a71-9a56405f7cbe",
-              "parentUUID": "dc80efef-a23d-4604-bfa5-b77a3163227f",
+              "uuid": "100cedce-ef5c-45a7-9590-f84307781c67",
+              "parentUUID": "67bcee5b-f052-45a3-a036-a61a65e89368",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "5c14e5da-5703-4038-bf56-1ce8681a22be",
-              "parentUUID": "dc80efef-a23d-4604-bfa5-b77a3163227f",
+              "uuid": "7b5997b5-dab9-4bbc-9fd9-a7a354968513",
+              "parentUUID": "67bcee5b-f052-45a3-a036-a61a65e89368",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "should load the login page",
               "fullTitle": "Login Page Availability Test should load the login page",
               "timedOut": false,
-              "duration": 13647,
+              "duration": 7780,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,26 +85,26 @@
               "context": null,
               "code": "//loading login page\nawait driver.get(loginPageURL);\n//checking login page title\nconst loginPageTitle = await driver.getTitle();\nexpect(loginPageTitle).to.equal(config.exp_correct_login_title);",
               "err": {},
-              "uuid": "c21fe560-d2d9-47c4-86db-30e924ceae4e",
-              "parentUUID": "dc80efef-a23d-4604-bfa5-b77a3163227f",
+              "uuid": "80c00e94-78e2-44a0-9385-f0e402cfa6c6",
+              "parentUUID": "67bcee5b-f052-45a3-a036-a61a65e89368",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c21fe560-d2d9-47c4-86db-30e924ceae4e"
+            "80c00e94-78e2-44a0-9385-f0e402cfa6c6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13647,
+          "duration": 7780,
           "root": false,
           "rootEmpty": false,
           "_timeout": 30000
         },
         {
-          "uuid": "9a20c407-6003-4db5-babb-2b28efc1f323",
+          "uuid": "8edbd546-f214-470d-ab1a-d8ae5e83df35",
           "title": "Login Page Availability Test",
           "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_login_with_different_languages.js",
           "file": "/tests/test_login_with_different_languages.js",
@@ -113,7 +113,7 @@
               "title": "\"before each\" hook in \"Login Page Availability Test\"",
               "fullTitle": "Login Page Availability Test \"before each\" hook in \"Login Page Availability Test\"",
               "timedOut": false,
-              "duration": 6251,
+              "duration": 6117,
               "state": null,
               "speed": null,
               "pass": false,
@@ -122,8 +122,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(loginPageURL);",
               "err": {},
-              "uuid": "b1de9796-788a-42e2-80b3-84407825c39a",
-              "parentUUID": "9a20c407-6003-4db5-babb-2b28efc1f323",
+              "uuid": "5cc94b2e-9d45-4a2c-9694-3ca16518e486",
+              "parentUUID": "8edbd546-f214-470d-ab1a-d8ae5e83df35",
               "isHook": true,
               "skipped": false
             }
@@ -142,8 +142,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "f81f8ec0-beb5-475a-a38e-d01eeb6dc000",
-              "parentUUID": "9a20c407-6003-4db5-babb-2b28efc1f323",
+              "uuid": "ccd4cc1b-6d01-4ec4-8359-3bf1aa31d131",
+              "parentUUID": "8edbd546-f214-470d-ab1a-d8ae5e83df35",
               "isHook": true,
               "skipped": false
             }
@@ -153,7 +153,7 @@
               "title": "should dispaly login page in Vietnamese",
               "fullTitle": "Login Page Availability Test should dispaly login page in Vietnamese",
               "timedOut": false,
-              "duration": 785,
+              "duration": 821,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -162,8 +162,8 @@
               "context": null,
               "code": "//finding the element with viet text\n        await driver.findElement(By.xpath(\"//a[text()='\" + vietText +\"']\")).click();\n        //waiting for element to load\n        await driver.wait(until.elementLocated(By.xpath(\"//*[@id='right-side']/div/div[1]/h3\")), 5000);\n        //checking language greetings\n        let greeting = await driver.findElement(By.xpath(\"//*[@id='right-side']/div/div[1]/h3\")).getText();\n        assert.equal(greeting, config.exp_viet_greeting);",
               "err": {},
-              "uuid": "c2d3bb6c-e5cc-4c93-9517-7a97b3016af9",
-              "parentUUID": "9a20c407-6003-4db5-babb-2b28efc1f323",
+              "uuid": "d9fa441a-d65b-46b1-b5bb-48465972a49d",
+              "parentUUID": "8edbd546-f214-470d-ab1a-d8ae5e83df35",
               "isHook": false,
               "skipped": false
             },
@@ -171,7 +171,7 @@
               "title": "should dispaly login page in Traditional Chinese (Hong Kong)",
               "fullTitle": "Login Page Availability Test should dispaly login page in Traditional Chinese (Hong Kong)",
               "timedOut": false,
-              "duration": 767,
+              "duration": 859,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -180,8 +180,8 @@
               "context": null,
               "code": "await driver.findElement(By.xpath(\"//a[text()='\" + chineseText +\"']\")).click();\nawait driver.wait(until.elementLocated(By.xpath(\"//*[@id='right-side']/div/div[1]/h3\")), 5000);\nlet greeting = await driver.findElement(By.xpath(\"//*[@id='right-side']/div/div[1]/h3\")).getText();\nassert.equal(greeting, config.exp_chinese_greeting);",
               "err": {},
-              "uuid": "02000294-b118-4d68-8eef-e9af2021b422",
-              "parentUUID": "9a20c407-6003-4db5-babb-2b28efc1f323",
+              "uuid": "4b2be8d0-13bc-403b-b440-cd68862b09aa",
+              "parentUUID": "8edbd546-f214-470d-ab1a-d8ae5e83df35",
               "isHook": false,
               "skipped": false
             },
@@ -189,7 +189,7 @@
               "title": "should dispaly login page in Thai",
               "fullTitle": "Login Page Availability Test should dispaly login page in Thai",
               "timedOut": false,
-              "duration": 11968,
+              "duration": 9469,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -198,28 +198,28 @@
               "context": null,
               "code": "await driver.findElement(By.xpath(\"//a[text()='\" + thaiText +\"']\")).click();\nawait driver.wait(until.elementLocated(By.xpath(\"//*[@id='right-side']/div/div[1]/h3\")), 5000);\nlet greeting = await driver.findElement(By.xpath(\"//*[@id='right-side']/div/div[1]/h3\")).getText();\nassert.equal(greeting, config.exp_thai_greeting);",
               "err": {},
-              "uuid": "595d3129-fd59-4367-a07a-87a68fdb1b20",
-              "parentUUID": "9a20c407-6003-4db5-babb-2b28efc1f323",
+              "uuid": "f2bd7195-a72f-49b5-8fdd-7a2c9588c3cd",
+              "parentUUID": "8edbd546-f214-470d-ab1a-d8ae5e83df35",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c2d3bb6c-e5cc-4c93-9517-7a97b3016af9",
-            "02000294-b118-4d68-8eef-e9af2021b422",
-            "595d3129-fd59-4367-a07a-87a68fdb1b20"
+            "d9fa441a-d65b-46b1-b5bb-48465972a49d",
+            "4b2be8d0-13bc-403b-b440-cd68862b09aa",
+            "f2bd7195-a72f-49b5-8fdd-7a2c9588c3cd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13520,
+          "duration": 11149,
           "root": false,
           "rootEmpty": false,
           "_timeout": 50000
         },
         {
-          "uuid": "d482f67f-0ce0-4548-b7f5-18594e1ecfaa",
+          "uuid": "fb745979-fbc8-4119-917f-7fa4acc94273",
           "title": "Brenntag Login Test",
           "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_login_failure.js",
           "file": "/tests/test_login_failure.js",
@@ -228,7 +228,7 @@
               "title": "\"before all\" hook in \"Brenntag Login Test\"",
               "fullTitle": "Brenntag Login Test \"before all\" hook in \"Brenntag Login Test\"",
               "timedOut": false,
-              "duration": 17367,
+              "duration": 14950,
               "state": null,
               "speed": null,
               "pass": false,
@@ -237,8 +237,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(config.url);",
               "err": {},
-              "uuid": "3c46367b-d7c7-488c-ae7a-07c01a2d484b",
-              "parentUUID": "d482f67f-0ce0-4548-b7f5-18594e1ecfaa",
+              "uuid": "bad63ac7-40dd-4a51-9eab-451aa8fb20b6",
+              "parentUUID": "fb745979-fbc8-4119-917f-7fa4acc94273",
               "isHook": true,
               "skipped": false
             }
@@ -257,8 +257,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "d24164d4-4ae7-406b-96b6-9bba4d37d033",
-              "parentUUID": "d482f67f-0ce0-4548-b7f5-18594e1ecfaa",
+              "uuid": "c8fd7d64-ce5d-4250-8b58-ee104461cefd",
+              "parentUUID": "fb745979-fbc8-4119-917f-7fa4acc94273",
               "isHook": true,
               "skipped": false
             }
@@ -268,7 +268,7 @@
               "title": "should fail to login on on entering invalid credentials",
               "fullTitle": "Brenntag Login Test should fail to login on on entering invalid credentials",
               "timedOut": false,
-              "duration": 2489,
+              "duration": 3034,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -277,26 +277,26 @@
               "context": null,
               "code": "// Locate the username and password fields and input the values from the config\n    await driver.findElement(By.id(\"username\")).sendKeys(config.username);\n    await driver.findElement(By.id(\"password\")).sendKeys(config.password);\n    // Locate the submit button and click on it\n    await driver.findElement(By.xpath(\"//button[@value='default']\")).click();\n    // Wait for the error message to appear\n    let errorMessage = await driver.wait(until.elementLocated(By.css(\"#error-element-password\")), 5000);\n    let errorMessageText = await errorMessage.getText();\n    assert.strictEqual(errorMessageText, config.exp_login_failure_result);\n    // Take a screenshot of the error message\n    await driver.takeScreenshot().then(function(data) {\n    fs.writeFileSync(\"error_screenshot.png\", data, \"base64\");\n    });",
               "err": {},
-              "uuid": "96af6e1c-2d61-4194-98a9-90a64e7f66f6",
-              "parentUUID": "d482f67f-0ce0-4548-b7f5-18594e1ecfaa",
+              "uuid": "ddf6f2c2-08d4-474e-815e-1d083fd43c29",
+              "parentUUID": "fb745979-fbc8-4119-917f-7fa4acc94273",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "96af6e1c-2d61-4194-98a9-90a64e7f66f6"
+            "ddf6f2c2-08d4-474e-815e-1d083fd43c29"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2489,
+          "duration": 3034,
           "root": false,
           "rootEmpty": false,
           "_timeout": 30000
         },
         {
-          "uuid": "d859db11-ba37-4c69-be9f-20ae5b3bdf28",
+          "uuid": "fa631a82-3eb0-4748-8746-a2aec823e359",
           "title": "Password Reset Test",
           "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_password_reset.js",
           "file": "/tests/test_password_reset.js",
@@ -305,7 +305,7 @@
               "title": "\"before each\" hook in \"Password Reset Test\"",
               "fullTitle": "Password Reset Test \"before each\" hook in \"Password Reset Test\"",
               "timedOut": false,
-              "duration": 16988,
+              "duration": 7019,
               "state": null,
               "speed": null,
               "pass": false,
@@ -314,8 +314,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(loginPageURL);",
               "err": {},
-              "uuid": "c3312305-4d57-4ad9-947e-9eabaefcad37",
-              "parentUUID": "d859db11-ba37-4c69-be9f-20ae5b3bdf28",
+              "uuid": "a28d84e1-e90e-4013-bda7-de703e7969f2",
+              "parentUUID": "fa631a82-3eb0-4748-8746-a2aec823e359",
               "isHook": true,
               "skipped": false
             }
@@ -334,8 +334,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "95cc71f5-7a44-4782-8e1d-2c181fe0ca09",
-              "parentUUID": "d859db11-ba37-4c69-be9f-20ae5b3bdf28",
+              "uuid": "05fe70e5-4196-43ee-846f-3c3670a8b52c",
+              "parentUUID": "fa631a82-3eb0-4748-8746-a2aec823e359",
               "isHook": true,
               "skipped": false
             }
@@ -345,7 +345,7 @@
               "title": "should send instructions to reset password",
               "fullTitle": "Password Reset Test should send instructions to reset password",
               "timedOut": false,
-              "duration": 2365,
+              "duration": 11595,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -354,26 +354,26 @@
               "context": null,
               "code": "await driver.findElement(By.css(\"p.c57e100a6.cdd0fccde a.c23626b08.cb8256979.cae524cbf\")).click();\n//waiting to navigate to next page\nawait driver.wait(until.elementLocated(By.id(\"email\")), 10000);\nawait driver.findElement(By.id(\"email\")).sendKeys(username);\nawait driver.findElement(By.xpath(\"//button[@value='default']\")).click();\n//waiting till required element is located \nawait driver.wait(until.elementLocated(By.css(\"h1.cd2c7af91.c1d267ff3\")), 10000);\n// get the \"Check Your Email\" element text\nconst checkEmailText = await driver.findElement(By.css(\"h1.cd2c7af91.c1d267ff3\")).getText();\n// assert that the \"Check Your Email\" element is displayed with the correct text\nexpect(checkEmailText).to.equal(\"Check Your Email\");",
               "err": {},
-              "uuid": "4e775209-7c67-4269-93b2-4592a3bf2a28",
-              "parentUUID": "d859db11-ba37-4c69-be9f-20ae5b3bdf28",
+              "uuid": "5891c1e5-2cae-4876-a7c1-8d7b0a460e5b",
+              "parentUUID": "fa631a82-3eb0-4748-8746-a2aec823e359",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4e775209-7c67-4269-93b2-4592a3bf2a28"
+            "5891c1e5-2cae-4876-a7c1-8d7b0a460e5b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2365,
+          "duration": 11595,
           "root": false,
           "rootEmpty": false,
           "_timeout": 30000
         },
         {
-          "uuid": "c04f5b5f-218e-4eb5-8e89-f7c6b050b29d",
+          "uuid": "62ceb406-528a-4990-a29f-2f914f69a7da",
           "title": "Track Load Time of a Page",
           "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_load_time.js",
           "file": "/tests/test_load_time.js",
@@ -382,7 +382,7 @@
               "title": "\"before all\" hook in \"Track Load Time of a Page\"",
               "fullTitle": "Track Load Time of a Page \"before all\" hook in \"Track Load Time of a Page\"",
               "timedOut": false,
-              "duration": 4548,
+              "duration": 4575,
               "state": null,
               "speed": null,
               "pass": false,
@@ -391,8 +391,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();",
               "err": {},
-              "uuid": "e27d0c07-6f25-434d-8954-c054dd401932",
-              "parentUUID": "c04f5b5f-218e-4eb5-8e89-f7c6b050b29d",
+              "uuid": "5f018935-a510-46f3-bd4a-98250064c87b",
+              "parentUUID": "62ceb406-528a-4990-a29f-2f914f69a7da",
               "isHook": true,
               "skipped": false
             }
@@ -401,83 +401,6 @@
             {
               "title": "\"after all\" hook in \"Track Load Time of a Page\"",
               "fullTitle": "Track Load Time of a Page \"after all\" hook in \"Track Load Time of a Page\"",
-              "timedOut": false,
-              "duration": 53,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "await driver.quit();",
-              "err": {},
-              "uuid": "b815f157-cedb-42d3-962f-6d9d28170356",
-              "parentUUID": "c04f5b5f-218e-4eb5-8e89-f7c6b050b29d",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "tests": [
-            {
-              "title": "should track load time of a page",
-              "fullTitle": "Track Load Time of a Page should track load time of a page",
-              "timedOut": false,
-              "duration": 12443,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "let startTime = new Date().getTime();\nawait driver.get(config.url);\nawait driver.wait(until.titleIs(\"Login | Brenntag Connect\"), 1000);\nlet endTime = new Date().getTime();\nlet loadTime = endTime - startTime;\nexpect(loadTime).lessThanOrEqual(30000);",
-              "err": {},
-              "uuid": "61e026ce-c86a-49bd-b741-3303a0c0d6cf",
-              "parentUUID": "c04f5b5f-218e-4eb5-8e89-f7c6b050b29d",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "61e026ce-c86a-49bd-b741-3303a0c0d6cf"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 12443,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 30000
-        },
-        {
-          "uuid": "29a73f68-aecc-4050-9e9b-159ffd8a5b78",
-          "title": "Navigate to incorrect URL",
-          "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_incorrect_url.js",
-          "file": "/tests/test_incorrect_url.js",
-          "beforeHooks": [
-            {
-              "title": "\"before all\" hook in \"Navigate to incorrect URL\"",
-              "fullTitle": "Navigate to incorrect URL \"before all\" hook in \"Navigate to incorrect URL\"",
-              "timedOut": false,
-              "duration": 4628,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "driver = await new Builder().forBrowser('chrome').build();",
-              "err": {},
-              "uuid": "970db4f7-ebb6-4dec-8e76-7873fd0f99ca",
-              "parentUUID": "29a73f68-aecc-4050-9e9b-159ffd8a5b78",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
-          "afterHooks": [
-            {
-              "title": "\"after all\" hook in \"Navigate to incorrect URL\"",
-              "fullTitle": "Navigate to incorrect URL \"after all\" hook in \"Navigate to incorrect URL\"",
               "timedOut": false,
               "duration": 52,
               "state": null,
@@ -488,73 +411,73 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "cddec436-d0a8-482e-8121-e911f9526cde",
-              "parentUUID": "29a73f68-aecc-4050-9e9b-159ffd8a5b78",
+              "uuid": "dfb93688-fe9b-4eeb-a060-82483ce703bc",
+              "parentUUID": "62ceb406-528a-4990-a29f-2f914f69a7da",
               "isHook": true,
               "skipped": false
             }
           ],
           "tests": [
             {
-              "title": "should throw an error",
-              "fullTitle": "Navigate to incorrect URL should throw an error",
+              "title": "should track load time of a page",
+              "fullTitle": "Track Load Time of a Page should track load time of a page",
               "timedOut": false,
-              "duration": 1157,
+              "duration": 9475,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "try {\n  await driver.get(config.incorrect_url);\n} catch (error) {\n  assert.notEqual(error.message, '', 'Expected an error to be thrown');\n}",
+              "code": "let startTime = new Date().getTime();\nawait driver.get(config.url);\nawait driver.wait(until.titleIs(\"Login | Brenntag Connect\"), 1000);\nlet endTime = new Date().getTime();\nlet loadTime = endTime - startTime;\nexpect(loadTime).lessThanOrEqual(30000);",
               "err": {},
-              "uuid": "d56be35e-a96b-4217-bd46-e86cae7dd715",
-              "parentUUID": "29a73f68-aecc-4050-9e9b-159ffd8a5b78",
+              "uuid": "1f7325d9-94a5-4486-9f37-3a559662c690",
+              "parentUUID": "62ceb406-528a-4990-a29f-2f914f69a7da",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d56be35e-a96b-4217-bd46-e86cae7dd715"
+            "1f7325d9-94a5-4486-9f37-3a559662c690"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1157,
+          "duration": 9475,
           "root": false,
           "rootEmpty": false,
           "_timeout": 30000
         },
         {
-          "uuid": "ac3531ff-af34-4322-9053-b6c2f551b809",
-          "title": "Sign Up Page Navigation test",
-          "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_sign_up_page_navigation.js",
-          "file": "/tests/test_sign_up_page_navigation.js",
+          "uuid": "9928dbd0-2212-457a-9a9b-fa9bca08a427",
+          "title": "Navigate to incorrect URL",
+          "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_incorrect_url.js",
+          "file": "/tests/test_incorrect_url.js",
           "beforeHooks": [
             {
-              "title": "\"before each\" hook in \"Sign Up Page Navigation test\"",
-              "fullTitle": "Sign Up Page Navigation test \"before each\" hook in \"Sign Up Page Navigation test\"",
+              "title": "\"before all\" hook in \"Navigate to incorrect URL\"",
+              "fullTitle": "Navigate to incorrect URL \"before all\" hook in \"Navigate to incorrect URL\"",
               "timedOut": false,
-              "duration": 16981,
+              "duration": 4514,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(loginPageURL);",
+              "code": "driver = await new Builder().forBrowser('chrome').build();",
               "err": {},
-              "uuid": "122736cb-ecfb-4317-bf4b-924901500007",
-              "parentUUID": "ac3531ff-af34-4322-9053-b6c2f551b809",
+              "uuid": "85ead863-6845-431f-8ff2-e5024621269f",
+              "parentUUID": "9928dbd0-2212-457a-9a9b-fa9bca08a427",
               "isHook": true,
               "skipped": false
             }
           ],
           "afterHooks": [
             {
-              "title": "\"after each\" hook in \"Sign Up Page Navigation test\"",
-              "fullTitle": "Sign Up Page Navigation test \"after each\" hook in \"Sign Up Page Navigation test\"",
+              "title": "\"after all\" hook in \"Navigate to incorrect URL\"",
+              "fullTitle": "Navigate to incorrect URL \"after all\" hook in \"Navigate to incorrect URL\"",
               "timedOut": false,
               "duration": 53,
               "state": null,
@@ -565,8 +488,85 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "1039dd1e-e9f3-479a-9da4-9ead45c1bf40",
-              "parentUUID": "ac3531ff-af34-4322-9053-b6c2f551b809",
+              "uuid": "b388cecb-91f4-4ef2-bb35-b35bc680fd8c",
+              "parentUUID": "9928dbd0-2212-457a-9a9b-fa9bca08a427",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should throw an error",
+              "fullTitle": "Navigate to incorrect URL should throw an error",
+              "timedOut": false,
+              "duration": 1188,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n  await driver.get(config.incorrect_url);\n} catch (error) {\n  assert.notEqual(error.message, '', 'Expected an error to be thrown');\n}",
+              "err": {},
+              "uuid": "2a79d117-1301-466f-b603-c80768ff794a",
+              "parentUUID": "9928dbd0-2212-457a-9a9b-fa9bca08a427",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2a79d117-1301-466f-b603-c80768ff794a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1188,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "a6e825dd-ab87-4851-9f4e-8bce9c3e4b89",
+          "title": "Sign Up Page Navigation test",
+          "fullFile": "/Users/sushmita/brenntag-automation-/tests/test_sign_up_page_navigation.js",
+          "file": "/tests/test_sign_up_page_navigation.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Sign Up Page Navigation test\"",
+              "fullTitle": "Sign Up Page Navigation test \"before each\" hook in \"Sign Up Page Navigation test\"",
+              "timedOut": false,
+              "duration": 6139,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.get(loginPageURL);",
+              "err": {},
+              "uuid": "b688569a-1eae-402a-b09a-33fda9a6f955",
+              "parentUUID": "a6e825dd-ab87-4851-9f4e-8bce9c3e4b89",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Sign Up Page Navigation test\"",
+              "fullTitle": "Sign Up Page Navigation test \"after each\" hook in \"Sign Up Page Navigation test\"",
+              "timedOut": false,
+              "duration": 780,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "3a2cb193-8e54-4d9b-85b3-99815e1c50d7",
+              "parentUUID": "a6e825dd-ab87-4851-9f4e-8bce9c3e4b89",
               "isHook": true,
               "skipped": false
             }
@@ -575,30 +575,34 @@
             {
               "title": "should navigate to sign up page",
               "fullTitle": "Sign Up Page Navigation test should navigate to sign up page",
-              "timedOut": false,
-              "duration": 17185,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "timedOut": true,
+              "duration": 30004,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "// click on the Sign Up Request button\n    await driver.findElement(By.className(\"sign-up\")).findElement(By.tagName(\"a\")).click();\n\n    // select India from the country dropdown\n    await driver.wait(until.elementLocated(By.className(\"select-placeholder\")), 5000).click();\n    await driver.wait(until.elementLocated(By.xpath(\"//*[text()='\" + config.sign_up_country + \"']\")), 5000).click();\n\n    // click on the Request for sign up button\n    await driver.wait(until.elementLocated(By.className(\"button\")), 5000).click();\n\n    // wait for the sign up page to load\n    let url = await driver.getCurrentUrl();\n\n    // assert that the user has been navigated to the sign up page\n    assert.equal(url, config.exp_sign_up_result);",
-              "err": {},
-              "uuid": "d9baa868-7337-42f8-aa6e-647bb3152609",
-              "parentUUID": "ac3531ff-af34-4322-9053-b6c2f551b809",
+              "err": {
+                "message": "Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/sushmita/brenntag-automation-/tests/test_sign_up_page_navigation.js)",
+                "estack": "Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/Users/sushmita/brenntag-automation-/tests/test_sign_up_page_navigation.js)\n    at listOnTimeout (node:internal/timers:568:17)\n    at process.processTimers (node:internal/timers:511:7)",
+                "diff": null
+              },
+              "uuid": "bdc1dee1-7d1b-43f9-9b3c-f74797995cf6",
+              "parentUUID": "a6e825dd-ab87-4851-9f4e-8bce9c3e4b89",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "d9baa868-7337-42f8-aa6e-647bb3152609"
+          "passes": [],
+          "failures": [
+            "bdc1dee1-7d1b-43f9-9b3c-f74797995cf6"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17185,
+          "duration": 30004,
           "root": false,
           "rootEmpty": false,
           "_timeout": 30000
